@@ -15,7 +15,7 @@ router.post("/novo", async (req, res) => {
   try {
     axios
       .post(
-        "http://192.168.10.148:3000/api/db/webtrader/negociacao/post/novo",
+        "https://db-wolf-quiteque.vercel.app/api/db/webtrader/negociacao/post/novo",
         req.body
       )
       .then((response) => {

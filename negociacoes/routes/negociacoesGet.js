@@ -10,7 +10,7 @@ router.get("/negociacoes", async (req, res) => {
   try {
     axios
       .get(
-        "http://192.168.10.148:3000/api/db/webtrader/negociacao/get/negociacao"
+        "https://db-wolf-quiteque.vercel.app/api/db/webtrader/negociacao/get/negociacao"
       )
       .then((response) => {
         res.status(200).json(response.data);
@@ -24,7 +24,7 @@ router.get("/:id", async (req, res) => {
   try {
     axios
       .get(
-        "http://192.168.10.148:3000/api/db/webtrader/negociacao/get/negociacao/"
+        "https://db-wolf-quiteque.vercel.app/api/db/webtrader/negociacao/get/negociacao/"
       )
       .then((response) => {
         res.status(200).json(response.data);
